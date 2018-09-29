@@ -1,0 +1,190 @@
+/*Periodo de reservacion*/
+
+insert into PeriodoReservacion (idPeriReserv) values(1)
+insert into PeriodoReservacion (idPeriReserv) values(2)
+insert into PeriodoReservacion (idPeriReserv) values(3)
+insert into PeriodoReservacion (idPeriReserv) values(4)
+insert into PeriodoReservacion (idPeriReserv) values(5)
+insert into PeriodoReservacion (idPeriReserv) values(6)
+insert into PeriodoReservacion (idPeriReserv) values(7)
+
+/*Reservacion*/
+insert into Reservacion(idReservacion, fechaEntrada, fechaSalida, estado, diasReservados, costoDiario) 
+values(1,'2017-09-02','2017-09-03','pagada',1,500)
+insert into Reservacion(idReservacion, fechaEntrada, fechaSalida, estado, diasReservados, costoDiario) 
+values(2,'2017-09-03','2017-09-06','por pagar',3,1000)
+insert into Reservacion(idReservacion, fechaEntrada, fechaSalida, estado, diasReservados, costoDiario) 
+values(3,'2017-11-11','2017-11-15','pagada',4,1500)
+insert into Reservacion(idReservacion, fechaEntrada, fechaSalida, estado, diasReservados, costoDiario) 
+values(4,'2017-01-14','2017-01-19','por pagar',5,1100)
+insert into Reservacion(idReservacion, fechaEntrada, fechaSalida, estado, diasReservados, costoDiario) 
+values(5,'2015-04-07','2015-04-10','pagada',3,860)
+insert into Reservacion(idReservacion, fechaEntrada, fechaSalida, estado, diasReservados, costoDiario) 
+values(6,'2014-03-10','2014-03-13','pagada',3,2500)
+insert into Reservacion(idReservacion, fechaEntrada, fechaSalida, estado, diasReservados, costoDiario) 
+values(7,'2014-05-10','2014-05-15','pagada',5,1450)
+
+/*Servicio*/
+insert into Servicio(idServicio, nombre, precio) 
+values(1,'limpieza',1000)
+insert into Servicio(idServicio, nombre, precio) 
+values(2,'SPA',4000)
+insert into Servicio(idServicio, nombre, precio) 
+values(3,'Transporte',400)
+insert into Servicio(idServicio, nombre, precio) 
+values(4,'Cena',300)
+insert into Servicio(idServicio, nombre, precio) 
+values(5,'Picina',1600)
+insert into Servicio(idServicio, nombre, precio) 
+values(6,'toallas',50)
+insert into Servicio(idServicio, nombre, precio) 
+values(7,'TV por cable', 500)
+
+/*ServiciosVenta*/
+insert into ServiciosVendidos(idSerVen, fecha) values(1, 2017-11-15)
+insert into ServiciosVendidos(idSerVen, fecha) values(2, 2015-04-13)
+insert into ServiciosVendidos(idSerVen, fecha) values(0, 2014-05-02)
+insert into ServiciosVendidos(idSerVen, fecha) values(4, 2018-04-16)
+insert into ServiciosVendidos(idSerVen, fecha) values(5, 2012-01-14)
+insert into ServiciosVendidos(idSerVen, fecha) values(8, 2014-02-11)
+insert into ServiciosVendidos(idSerVen, fecha) values(7, 2012-05-19)
+
+/*Venta*/
+insert into Venta(idVenta) values(1)
+insert into Venta(idVenta) values(2)
+insert into Venta(idVenta) values(3)
+insert into Venta(idVenta) values(4)
+insert into Venta(idVenta) values(5)
+insert into Venta(idVenta) values(6)
+insert into Venta(idVenta) values(7)
+
+/*VentaReservaciones*/
+insert VentaReservaciones(idVenReserv, precio) values(1,16000)
+insert VentaReservaciones(idVenReserv, precio) values(2,11000)
+insert VentaReservaciones(idVenReserv, precio) values(3,9000)
+insert VentaReservaciones(idVenReserv, precio) values(4,700)
+insert VentaReservaciones(idVenReserv, precio) values(5,1300)
+insert VentaReservaciones(idVenReserv, precio) values(6,7000)
+insert VentaReservaciones(idVenReserv, precio) values(7,19000)
+
+/*Empleados*/
+insert into Empleado(idEmpleado,nombre,apPat,apMat,edad) values(1,'Juan', 'ignacio', 'zurita',18)
+insert into Empleado(idEmpleado,nombre,apPat,apMat,edad) values(2,'Jorge', 'Rodriguez', 'Hernandez',34)
+insert into Empleado(idEmpleado,nombre,apPat,apMat,edad) values(3,'Pedro', 'Delgadilllo', 'Ata',67)
+insert into Empleado(idEmpleado,nombre,apPat,apMat,edad) values(4,'Pablo', 'Melchor', 'Zapata',24)
+insert into Empleado(idEmpleado,nombre,apPat,apMat,edad) values(5,'Felix', 'Rea', 'Paredes',21)
+insert into Empleado(idEmpleado,nombre,apPat,apMat,edad) values(6,'Gerardo', 'Montemayor', 'Gonzalez',20)
+insert into Empleado(idEmpleado,nombre,apPat,apMat,edad) values(7,'Luis', 'Duque', 'Guerrero',31)
+
+/*Cliente*/
+insert into Cliente(idCliente, nombre, apPat, apMat)
+values (1,'Mauro', 'Duque', 'Montemayor')
+insert into Cliente(idCliente, nombre, apPat, apMat)
+values (2,'Luis Gerardo', 'Juárez', 'Melchor')
+insert into Cliente(idCliente, nombre, apPat, apMat)
+values (3,'Félix', 'Delgadillo', 'Barrios')
+insert into Cliente(idCliente, nombre, apPat, apMat)
+values (4,'Pablo', 'Rodríguez', 'Rea')
+insert into Cliente(idCliente, nombre, apPat, apMat)
+values (5,'Manuel', 'González', 'Aguilar')
+insert into Cliente(idCliente, nombre, apPat, apMat)
+values (6,'Fátima', 'Rodríguez', 'Rodríguez')
+insert into Cliente(idCliente, nombre, apPat, apMat)
+values (7,'Jose', 'Antonio', 'Juárez')
+
+
+/*Departamento*/
+insert into Departamento(idDepartamento, nombre)
+values (1, 'Recepcion')
+insert into Departamento(idDepartamento, nombre)
+values (2, 'Ama de llaves')
+insert into Departamento(idDepartamento, nombre)
+values (3, 'Contabilidad')
+insert into Departamento(idDepartamento, nombre)
+values (4, 'Mantenimiento y decoración')
+insert into Departamento(idDepartamento, nombre)
+values (5, 'Alimentos y bebidas')
+insert into Departamento(idDepartamento, nombre)
+values (6, 'Seguridad')
+insert into Departamento(idDepartamento, nombre)
+values (7, 'Del Personal')
+
+
+/*Disponibilidad*/
+insert into Disponibilidad(idDisponibilidad, fecha, estado)
+values (11, 2017-12-01, 'Disponible')
+insert into Disponibilidad(idDisponibilidad, fecha, estado)
+values (12, 2017-12-15, 'No disponible')
+insert into Disponibilidad(idDisponibilidad, fecha, estado)
+values (13, 2017-11-15, 'No disponible')
+insert into Disponibilidad(idDisponibilidad, fecha, estado)
+values (14, 2017-09-16, 'No disponible')
+insert into Disponibilidad(idDisponibilidad, fecha, estado)
+values (15, 2017-08-16, 'Disponible')
+insert into Disponibilidad(idDisponibilidad, fecha, estado)
+values (16, 2017-07-24, 'Disponible')
+insert into Disponibilidad(idDisponibilidad, fecha, estado)
+values (17, 2017-06-15, 'No disponible')
+
+
+
+/*Habitacion*/
+insert into Habitacion(idHabitacion, clase, piso, costoDiario)
+values (101, 'Suite', 2, 3100)
+insert into Habitacion(idHabitacion, clase, piso, costoDiario)
+values (102, 'Doble', 3, 1600)
+insert into Habitacion(idHabitacion, clase, piso, costoDiario)
+values (103, 'Individual', 1, 800)
+insert into Habitacion(idHabitacion, clase, piso, costoDiario)
+values (104, 'Doble', 3, 1600)
+insert into Habitacion(idHabitacion, clase, piso, costoDiario)
+values (105, 'Suite', 2, 3100)
+insert into Habitacion(idHabitacion, clase, piso, costoDiario)
+values (106, 'Individual', 4, 500)
+insert into Habitacion(idHabitacion, clase, piso, costoDiario)
+values (107, 'Triple', 2, 1200)
+
+/*Nomina*/
+insert into Nomina(idNomina, sueldoPorHora, horasTrabajadas, sueldoTotal)
+values (101, 50, 8, 400)
+insert into Nomina(idNomina, sueldoPorHora, horasTrabajadas, sueldoTotal)
+values (102, 50, 14, 700)
+insert into Nomina(idNomina, sueldoPorHora, horasTrabajadas, sueldoTotal)
+values (103, 50, 4, 200)
+insert into Nomina(idNomina, sueldoPorHora, horasTrabajadas, sueldoTotal)
+values (104, 50, 9, 450)
+insert into Nomina(idNomina, sueldoPorHora, horasTrabajadas, sueldoTotal)
+values (105, 50, 10, 500)
+insert into Nomina(idNomina, sueldoPorHora, horasTrabajadas, sueldoTotal)
+values (106, 50, 20, 1000)
+insert into Nomina(idNomina, sueldoPorHora, horasTrabajadas, sueldoTotal)
+values (107, 50, 48, 2400)
+
+
+/*Update*/
+update Empleado set nombre = 'Pancho' from Empleado where idEmpleado = 1
+update VentaReservaciones set precio = 12500 from VentaReservaciones where idVenReserv = 7
+update Servicio set nombre = 'cambio de mantas' from Servicio where idServicio = 3
+update Nomina set sueldoPorHora = 4 from Nomina where idNomina = 107
+update Habitacion set clase = 'Primera' from Habitacion where idHabitacion=105
+
+select * from Empleado
+select * from VentaReservaciones
+select * from Servicio
+select * from Nomina
+select * from Habitacion
+
+
+
+/*Delete*/
+delete from Empleado where idEmpleado = 4
+delete from Servicio where idServicio =2
+delete from Habitacion where idHabitacion =1
+delete from Cliente where idCliente =105
+delete from Disponibilidad where idDisponibilidad = 106
+
+select * from Empleado
+select * from Servicio
+select * from Servicio
+select * from Cliente
+select * from Habitacion
